@@ -236,9 +236,7 @@
 - Mobile Systems
   - Embedded devices that are mobile
 
-# Chapter 11
-
-## DNS Security
+## DNS Security - Chapter 11
 
 ### Common Secure Protocols
 
