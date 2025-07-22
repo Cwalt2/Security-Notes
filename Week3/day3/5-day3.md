@@ -83,7 +83,7 @@
   - Key size: 128, 192, 256-bit size
   - Rounds: 10, 12, 14
 - Streaming
-  - Streaming Cipher 
+  - Streaming Cipher
   - Encrypt one bit at a time
   - Popular in wireless networking
   - RC4

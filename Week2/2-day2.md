@@ -53,7 +53,7 @@
   - Can be bypassed by physical means
     - USB drives
     - take home laptops
-    - Employee 
+    - Employee
 
 ## Environmental Security
 
@@ -92,11 +92,11 @@
 - Unencrypted storage media
 - USB ports on computers that are not disabled
 
-# Identity and Account Management Chapter 4
+## Identity and Account Management Chapter 4
 
 > Triple A, AAA Authentication, Authorization, and Accounting
 
-## Identity, Authentication, and Authorization
+### Identity, Authentication, and Authorization
 
 - Identification
   - Username
@@ -108,7 +108,7 @@
   - Make sure you're actually supposed to be there
   - Are you in the right seat? Are you on the registration?
 
-### Authentication
+#### Authentication
 
 - Using more than one factor of authentication
 - Factors
@@ -127,7 +127,7 @@
     - Physical location
     - Zip code when using a credit card
 
-## Enabling Multifactor Authentication
+### Enabling Multifactor Authentication
 
 - Identification
 - Authentication
@@ -135,7 +135,7 @@
 - Accounting
   - Auditing
 
-## Authorization
+### Authorization
 
 - Based on permissions granted
 - Determines resource permissions
@@ -147,7 +147,7 @@
   - Track permissions usage for accountability purposes
   - Who or what accessed which resource, how long, on what date?
 
-## Accounting/Auditing
+### Accounting/Auditing
 
 - Often called auditing
 - Track activity
@@ -158,16 +158,16 @@
   - Changes to files/database records
 - Anything with a public IP will be attacked
 
-## Authentication Methods
+### Authentication Methods
 
-### Password Vaults
+#### Password Vaults
 
 - Also called "Password Managers"
 - Example: Lastpass, cloud-based vaults to store password keys
 - A master key protects the vault
   - Don't forget it!
 
-### One-Time Password (OTP)
+#### One-Time Password (OTP)
 
 - Unique password (code) generated for single use
   - Static code sent via email or sms text
@@ -180,7 +180,7 @@
 - HMAC-based one-time password (HOTP)
   - HMAC encrypts a hash to ensure authenticity
 
-### Certificate-Based Authentication 
+#### Certificate-Based Authentication
 
 - PKI certificates are issued by a trusted authority to an individual entity
   - Device, VPN, app access
@@ -188,13 +188,13 @@
     - Called a Personal Identity Verification (PIV) card
     - Common access card (CAC) can authenticate to everything
 
-### SSH Public Key Authentication
+#### SSH Public Key Authentication
 
 - Sign in with username and password (passphrase) as well as a private key
 - Public key stored on the server
 - Private key stored on admin device
 
-### Biometrics
+#### Biometrics
 
 - Fingerprint
 - Retina
@@ -208,11 +208,11 @@
   - False rejection
   - Crossover error rate
 
-## Access Control Schemes
+### Access Control Schemes
 
-### Credential Policies
+#### Credential Policies
 
-#### Defines who gets access to what
+Defines who gets access to what
 
 - Employees
 - Contractors
@@ -259,7 +259,7 @@
 - User Account Auditing
 - Disablement
 
-### Account Management
+### User Account Management
 
 - Rights/privileges
 - Account types
@@ -296,6 +296,7 @@
   - Outdated
   - Cleartext Transmissions
 - Microsoft Challenge Handshake Authentication Protocol (MS-CHAPv2)
+
 > Client requests authentication from server
 > Server sends challenge to the client
 > Client responds to challenge by hashing response with user's password
@@ -307,6 +308,7 @@
 - Used on Windows workgroup computers
 - Password hashes with NTLM are not salted
 - NTLM v2 passwords are salted
+
 > Windows group environment question it will be NTLM
 
 ### Kerberos
@@ -368,8 +370,6 @@
   - Trusted by resource provider
 - Security Assertion Markup Language (SAML)
   - SAML token is a digital security token that proves identity
+
 > User connects to web app -> Resource provider (RP) -> "I dont do authentication" to user -> User authenticates to IdP -> IdP provides user with digitally signed authentication token -> User connects to web app
-
 > Review term Captive Portal
-
-
